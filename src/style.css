@@ -2,25 +2,32 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --first-font: "Titillium Web", sans-serif;
+  --second-font: "Cairo", sans-serif;
 }
 
 body {
   margin: 60px auto !important;
+  font-family: var(--first-font);
 }
 
 h1,
 h2,
 h3 {
   text-align: center;
-  margin: 0;
+  margin-top: 0;
 }
 
 h1 {
-  font-size: 76px;
+  font-size: 56px;
+  margin-top: -1;
 }
 
-h2 {
-  font-size: 48px;
+p {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  font-family: var(--second-font);
 }
 
 h3 {
@@ -77,6 +84,7 @@ h4 {
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
+  font-family: var(--second-font);
 }
 
 .email-link:hover {
@@ -92,4 +100,17 @@ h4 {
 #contact {
   display: block;
   margin: 50px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 50px;
 }
