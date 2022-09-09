@@ -4,8 +4,8 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --first-font: "Titillium Web", sans-serif;
   --second-font: "Cairo", sans-serif;
-  --font-color: #797a7e;
-  --fohre-color: #d8d3cd;
+  --font-color: hwb(0 27% 73%);
+  --four-color: #d8d3cd;
 }
 
 body {
@@ -35,7 +35,6 @@ p {
 
 h3 {
   font-size: 24px;
-  opacity: 0.7;
 }
 
 h4 {
@@ -61,11 +60,13 @@ h4 {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: var(--font-color);
+  transition: all 200ms ease;
 }
 
 .about-link {
   color: var(--font-color);
   border: 1px solid var(--primary-color);
+  transition: all 200ms ease;
 }
 
 .homepage-link {
@@ -86,7 +87,6 @@ h4 {
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--fohre-color);
   font-size: 28px;
   text-decoration: none;
   font-family: var(--second-font);
@@ -125,6 +125,19 @@ h4 {
   transition: all 2s ease-in-out;
 }
 
-.col-sm-4 :hover {
-  transform: scale(1.2);
+.col-sm-4:hover {
+  transform: scale(1.05);
+}
+
+.contact-link:hover {
+  transform: scale(1.05);
+}
+
+.about-link:hover {
+  transform: scale(1.05);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--font-color);
 }
