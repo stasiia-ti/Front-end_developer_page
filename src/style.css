@@ -1,14 +1,17 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #e0ece4;
+  --secondary-color: #f7f2e7;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --first-font: "Titillium Web", sans-serif;
   --second-font: "Cairo", sans-serif;
+  --font-color: #797a7e;
+  --fohre-color: #d8d3cd;
 }
 
 body {
   margin: 60px auto !important;
   font-family: var(--first-font);
+  color: var(--font-color);
 }
 
 h1,
@@ -36,8 +39,10 @@ h3 {
 }
 
 h4 {
+  margin-top: 80px;
   font-size: 35px;
 }
+
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -55,11 +60,11 @@ h4 {
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: var(--font-color);
 }
 
 .about-link {
-  color: var(--primary-color);
+  color: var(--font-color);
   border: 1px solid var(--primary-color);
 }
 
@@ -81,7 +86,7 @@ h4 {
 .email-link {
   display: flex;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--fohre-color);
   font-size: 28px;
   text-decoration: none;
   font-family: var(--second-font);
@@ -95,6 +100,7 @@ h4 {
   width: 100%;
   position: fixed !important;
   top: 0;
+  background-color: var(--secondary-color);
 }
 
 #contact {
@@ -113,4 +119,12 @@ h4 {
 .navbar-nav {
   position: absolute;
   right: 50px;
+}
+
+.col-sm-4 {
+  transition: all 2s ease-in-out;
+}
+
+.col-sm-4 :hover {
+  transform: scale(1.2);
 }
