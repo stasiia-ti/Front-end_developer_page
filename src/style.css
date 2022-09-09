@@ -81,7 +81,8 @@ h4 {
 }
 
 .about-paragraphs p {
-  margin: 10px;
+  margin: auto 50px;
+  text-align: center;
 }
 
 .email-link {
