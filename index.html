@@ -9,6 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page by Anastasiia Titovska</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -99,14 +103,14 @@
     </div>
     <div class="container text-center">
       <div class="row">
-        <div class="col-6 mt-4 justify-content-start">
+        <div class="col-sm-6 justify-content">
           <img
             src="images/weather-app.png"
             alt="Weather app"
             class="img-fluid rounded"
           />
         </div>
-        <div class="col-6 mt-4 justify-content-end">
+        <div class="col-sm-6 justify-content">
           <h4>Weather app</h4>
           <p>
             The application allows you to track the weather anywhere in the
@@ -120,7 +124,13 @@
             >
           </div>
         </div>
-        <div class="col-6 mt-4 justify-content-start mb-6">
+        <div class="col-sm-6 justify-content">
+          <img
+            src="images/chess.png"
+            alt="Chess page double"
+            class="img-fluid rounded d-block d-sm-none"
+          />
+
           <h4>Landing Page Chess</h4>
           <p>
             The landing page about chess introduces the history of the
@@ -137,22 +147,22 @@
             >
           </div>
         </div>
-        <div class="col-6 mt-4 justify-content-end">
+        <div class="col-sm-6 justify-content-end">
           <img
             src="images/chess.png"
             alt="Chess page"
-            class="img-fluid rounded"
+            class="img-fluid rounded d-none d-sm-block"
           />
         </div>
 
-        <div class="col-6 mt-4 justify-content-start">
+        <div class="col-sm-6 justify-content">
           <img
             src="images/weather.png"
             alt="Weather page"
             class="img-fluid rounded"
           />
         </div>
-        <div class="col-6 mt-4 justify-content-end">
+        <div class="col-sm-6 justify-content">
           <h4>Weather Page</h4>
           <p>
             The application allows you to track the weather anywhere in the
@@ -161,23 +171,48 @@
             sunrise and sunset data.
           </p>
           <div class="navigation-links">
-            <a href="#" class="contact-link" title="Link to the weather page"
+            <a
+              href="https://exquisite-bombolone-26b734.netlify.app"
+              class="contact-link"
+              title="Link to the weather page"
               >Launch Weather page</a
             >
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <p>
-        More information about code you will see in
-        <a
-          href="https://github.com/stasiia-ti/weather-app"
-          class="link"
-          title="link to github page"
-          >Github</a
-        >
-      </p>
+    <footer class="container">
+      <p>More information about me or my codes</p>
+      <div class="container-fluid text-center mt-2" id="c-media">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            <a
+              href="https://www.linkedin.com/in/titovska-anastasiia"
+              class="link"
+              title="link to linkedin page"
+            >
+              <span class="fa fa-linkedin-square fa-2x"></span
+            ></a>
+          </div>
+          <div class="col col-lg-2">
+            <a
+              href="https://www.instagram.com/patrapema/"
+              title="link to instagram  page"
+              class="link"
+            >
+              <span class="fa fa-instagram fa-2x"></span
+            ></a>
+          </div>
+          <div class="col col-lg-2">
+            <a
+              href="https://github.com/stasiia-ti/weather-app"
+              class="link"
+              title="link to github page"
+              ><i class="fa fa-github" style="font-size: 36px"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
