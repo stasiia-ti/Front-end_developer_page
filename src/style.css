@@ -13,6 +13,10 @@ body {
   font-family: var(--first-font);
   color: var(--font-color);
 }
+main {
+  background-image: url("../images/background.jpg");
+  padding-bottom: 20px;
+}
 
 h1,
 h2,
@@ -100,6 +104,7 @@ h4 {
 
 .navbar {
   width: 100%;
+  height: 60px;
   position: fixed !important;
   top: 0;
   background-color: var(--secondary-color);
@@ -112,6 +117,53 @@ h4 {
 
 .navbar-brand {
   margin-left: 20px;
+  position: relative;
+  width: 165px;
+  height: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.navbar-brand::before {
+  content: "";
+  position: absolute;
+  top: -70%;
+  left: -50%;
+  width: 165px;
+  height: 30px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 3s linear infinite;
+}
+
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  top: -70%;
+  left: -50%;
+  width: 165px;
+  height: 30px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 3s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.navbar-brand-name {
+  background: var(--secondary-color);
+  position: absolute;
+  inset: 2px;
+  z-index: 10;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--font-color);
 }
 
 .navbar-toggler {
@@ -149,7 +201,6 @@ footer {
   background-color: var(--secondary-color);
   max-width: none !important;
   padding: 30px;
-  margin-top: 20px;
 }
 
 #c-media {
