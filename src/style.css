@@ -7,15 +7,31 @@
   --font-color: hwb(0 27% 73%);
   --four-color: #d8d3cd;
 }
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
 
 body {
   margin: 60px 0 0 auto;
   font-family: var(--first-font);
   color: var(--font-color);
 }
-main {
-  background-image: url("../images/background.jpg");
+.background {
+  background-image: url("../images/background1.jpg");
   padding-bottom: 20px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 50px;
 }
 
 h1,
@@ -76,7 +92,7 @@ h4 {
 
 .homepage-link {
   color: var(--primary-color);
-  text-align: center;
+  margin: auto;
   display: block;
 }
 
@@ -86,7 +102,8 @@ h4 {
 }
 
 .about-paragraphs p {
-  margin: auto 50px;
+  margin: auto;
+  max-width: 700px;
   text-align: center;
 }
 
@@ -175,12 +192,17 @@ h4 {
   right: 50px;
 }
 
-.col-sm {
-  transition: all 500ms ease-in-out;
+.img-fluid {
+  transition: all 1s ease-in-out;
+  
 }
 
-.col-sm:hover {
-  transform: scale(1.05);
+.img-fluid:hover {
+  transform: scale(1.1);
+}
+a {
+  text-decoration: none;
+  color: #0c6efd;
 }
 
 .contact-link:hover {
@@ -195,14 +217,24 @@ h4 {
   text-decoration: none;
   color: #0c6efd;
   font-size: larger;
+  transition: all 1s ease-in-out;
+}
+.link:hover {
+  color: #003c97;
+}
+.project {
+  margin: 50px;
 }
 
-footer {
-  background-color: var(--secondary-color);
-  max-width: none !important;
-  padding: 30px;
+.content {
+  background: var(--secondary-color);
+  max-width: 100%;
+  padding: 50px;
+  margin: 0;
 }
 
-#c-media {
-  width: 500px;
+.text-about {
+  max-width: 100%;
+  padding: 50px;
+  margin-top: -40px;
 }

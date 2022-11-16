@@ -31,10 +31,13 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/#name">Anastasiia Titovska</a>
+          <div class="navbar-brand">
+            <a class="navbar-brand-name" href="/#name">Anastasiia Titovska</a>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -47,7 +50,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -68,7 +71,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="#to_contact"
+                  href="/about.html#to_contact"
                   title="About Anastasiia Titovska/contact"
                   >Contact me</a
                 >
@@ -77,13 +80,13 @@
           </div>
         </div>
       </nav>
-
+      <main class="background">
       <h1>About me</h1>
       <h3>Front-end developer from Kyiv, Ukraine</h3>
     </header>
     <div class="container mt-5">
       <div class="row">
-        <div class="col-sm-6 content">
+        <div class="col-sm-6 text-about">
           <p>
             Hi, I'm Anastasiia! Front-end developer from Ukraine. Like many
             developers, my path to programming wasn't exactly straightforward.
@@ -111,72 +114,75 @@
         you are interested in my work, let me know about it, contacts below.
       </p>
     </div>
-    <div class="container">
+    <div class="project">
       <div class="row">
         <div class="col-sm-4">
           <img
-            src="images/weather-app.png"
+            src="images/app-react.png"
             alt="Weather app"
             class="img-fluid rounded shadow p-2 mb-2 border"
           />
         </div>
         <div class="col-sm-4">
           <img
-            src="images/chess.png"
-            alt="Chess page"
+            src="images/brella.jpg"
+            alt="Landing page"
             class="img-fluid rounded shadow p-2 mb-2 border"
           />
         </div>
         <div class="col-sm-4">
           <img
-            src="images/weather.png"
+            src="images/moon-light.png"
+            alt="parallax effect"
+            class="img-fluid rounded shadow p-2 mb-2 border"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="images/weather-app.png"
             alt="Weather page"
             class="img-fluid rounded shadow p-2 mb-2 border"
           />
         </div>
       </div>
     </div>
-    <div class="contact" id="to_contact">
-      <footer class="container bottom-0 end-0">
-        <h2>📮 Contact me</h2>
-        <a
-          href="mailto:patrapema@gmail.com"
-          alt="email link"
-          class="email-link"
-        >
-          patrapema@gmail.com
-        </a>
-        <div class="container-fluid text-center mt-2" id="c-media">
-          <div class="row justify-content-md-center">
-            <div class="col col-lg-2">
+    </main>
+    
+      <footer class="content">
+        <p>More information about me or my codes</p>
+        <div class="container-fluid text-center">
+          <div class="row justify-content-md-center p-3">
+            <div class="col-sm-2">
               <a
                 href="https://www.linkedin.com/in/titovska-anastasiia"
                 class="link"
                 title="link to linkedin page"
+                target="_blank"
               >
                 <span class="fa fa-linkedin-square fa-2x"></span
               ></a>
             </div>
-            <div class="col col-lg-2">
+            <div class="col-sm-2">
               <a
                 href="https://www.instagram.com/patrapema/"
                 title="link to instagram  page"
                 class="link"
+                target="_blank"
               >
                 <span class="fa fa-instagram fa-2x"></span
               ></a>
             </div>
-            <div class="col col-lg-2">
+            <div class="col-sm-2">
               <a
                 href="https://github.com/stasiia-ti/weather-app"
                 class="link"
                 title="link to github page"
+                target="_blank"
                 ><i class="fa fa-github" style="font-size: 36px"></i
               ></a>
             </div>
           </div>
         </div>
       </footer>
-    </div>
   </body>
 </html>
